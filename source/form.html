@@ -86,19 +86,19 @@
               <ul class="radio__list">
                 <li class="radio__item">
                   <label class="radio__option">
-                    <input class="radio__input visually-hidden" type="radio" name="feel" value="good-feel" checked>
+                    <input class="radio__input" type="radio" name="feel" value="good-feel" checked>
                           <span class="radio__control">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="radio__item">
                   <label class="radio__option">
-                    <input class="radio__input visually-hidden" type="radio" name="feel" value="bad-feel">
+                    <input class="radio__input" type="radio" name="feel" value="bad-feel">
                           <span class="radio__control">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="radio__item">
                   <label class="radio__option">
-                    <input class="radio__input visually-hidden" type="radio" name="feel" value="idn-feel">
+                    <input class="radio__input" type="radio" name="feel" value="idn-feel">
                           <span class="radio__control">Затрудняюсь ответить</span>
                   </label>
                 </li>
@@ -109,25 +109,25 @@
               <ul class="check__list">
                 <li class="check__item">
                   <label class="check__label">
-                    <input class="check__input visually-hidden" type="checkbox" name="place1" checked>
+                    <input class="check__input" type="checkbox" name="place1" checked>
                           <span class="check__control">Мост дьявола</span>
                   </label>
                 </li>
                 <li class="check__item">
                   <label class="check__label">
-                    <input class="check__input visually-hidden" type="checkbox" name="place2" checked>
+                    <input class="check__input" type="checkbox" name="place2" checked>
                           <span class="check__control">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="check__item">
                   <label class="check__label">
-                    <input class="check__input visually-hidden" type="checkbox" name="place3" checked>
+                    <input class="check__input" type="checkbox" name="place3" checked>
                           <span class="check__control">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="check__item">
                   <label class="check__label">
-                    <input class="check__input visually-hidden" type="checkbox" name="place4">
+                    <input class="check__input" type="checkbox" name="place4">
                           <span class="check__control">Красные скалы</span>
                   </label>
                 </li>
@@ -135,7 +135,7 @@
             </div>
             <div class="review__area area">
               <h2 class="area__title">Опишите свои эмоции:</h2>
-              <textarea class="area__comment visually-hidden" name="comment" id="comment-area" rows="10">
+              <textarea class="area__comment" name="comment" id="comment-area" rows="10">
                 Опишите подробно все свои восторги
               </textarea>
             </div>
@@ -180,14 +180,14 @@
     </footer>
     <!-- Модальные окна -->
     <div class="modal modal-close">
-      <div class="modal__wrapper">
+      <div class="modal__wrapper modal__wrapper--one">
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__descript">Проверьте поля, выделенные<br> красным, скорее всего вы <br>забыли их заполнить</p>
         <button class="modal__close button" type="button">Ок</button>
       </div>
     </div>
     <div class="modal modal-close">
-      <div class="modal__wrapper">
+      <div class="modal__wrapper modal__wrapper--two">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__descript">Спасибо за ваше участие, ваш<br> отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
         <button class="modal__close button" type="button">Закрыть окно</button>
