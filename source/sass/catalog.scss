@@ -1,0 +1,44 @@
+.catalog {
+  margin: 0;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.catalog__desc {
+  margin: 0;
+}
+
+.catalog__likes {
+  font-weight: 700;
+  margin: 0;
+}
+
+.catalog__button {
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background: none;
+}
+
+.catalog__item {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+.catalog__video {
+  padding-left: 20px;
+  padding-right: 20px;
+}

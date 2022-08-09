@@ -1,0 +1,28 @@
+.review {
+  margin: 0;
+}
+
+.review__rule {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 60%;
+  margin: 0;
+}
+
+.review__button {
+  display: block;
+  background: #81b3d2;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  border: 0;
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  min-width: 281px;
+  text-transform: uppercase;
+}

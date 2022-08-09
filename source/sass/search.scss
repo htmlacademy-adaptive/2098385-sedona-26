@@ -1,0 +1,33 @@
+.search {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.search__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 33px;
+}
+
+.search__description {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.search__link {
+  display: block;
+  background: #81b3d2;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 16px 49px;
+  max-width: 284px;
+}
+
+.search__wrapper {
+  padding-top: 38px;
+  padding-bottom: 48px;
+}
