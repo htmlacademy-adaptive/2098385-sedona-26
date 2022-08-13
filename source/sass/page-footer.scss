@@ -8,13 +8,20 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 28px;
-  padding-left: 70px;
-  padding-bottom: 34px;
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 34px;
 }
 
 .page-footer__list {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
+  margin-bottom: 47px;
   padding: 0;
+}
+
+.page-footer__item:not(:last-child) {
+  margin-right: 6px;
 }

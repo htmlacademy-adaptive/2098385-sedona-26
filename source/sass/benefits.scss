@@ -1,23 +1,35 @@
 .benefits {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 .benefits__item {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .benefits__title {
+  display: block;
   margin: 0;
   margin-bottom: 14px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
+}
+
+.benefits__title--advice {
+  text-align: start;
 }
 
 .benefits__description {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.benefits__description--advice {
+  text-align: start;
 }
 
 .benefits__description--number {
@@ -41,27 +53,33 @@
 
 .benefits__item--advice {
   background-color: #ffffff;
-  padding: 25px;
+  padding-top: 30px;
+  padding-left: 66px;
+  padding-right: 18px;
 }
 
 .benefits__item--view {
   background-color: #eeeeee;
-  padding-top: 22px;
-  padding-bottom: 23px;
-  padding-left: 63px;
-  padding-right: 18px;
+  padding: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .benefits__item-wrapper--one {
+  max-width: 320px;
+  margin: 0 auto;
   padding-top: 54px;
   padding-bottom: 40px;
   padding-left: 16px;
-  padding-right: 16px;
+  padding-right: 22px;
 }
 
 .benefits__item-wrapper--two {
+  max-width: 320px;
+  margin: 0 auto;
   padding-top: 39px;
   padding-bottom: 35px;
-  padding-left: 16px;
+  padding-left: 15px;
   padding-right: 16px;
+  margin-top: 52px;
 }

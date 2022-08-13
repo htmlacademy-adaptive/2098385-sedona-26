@@ -1,4 +1,5 @@
-@import "font.scss";
+@import "fonts.scss";
+@import "variables.scss";
 @import "page.scss";
 @import "body.scss";
 @import "area.scss";
@@ -9,7 +10,6 @@
 @import "contacts.scss";
 @import "content.scss";
 @import "creators.scss";
-@import "fonts.scss";
 @import "form.scss";
 @import "lead.scss";
 @import "main.scss";
@@ -24,26 +24,7 @@
 @import "radio.scss";
 @import "review.scss";
 @import "search.scss";
-@import "style.scss";
 @import "visually-hidden.scss";
 @import "sedona.scss";
 @import "video.scss";
-
-html {
-  background-color: #e7e5e5;
-  margin: 0;
-}
-
-body {
-  background-color: #ffffff;
-  margin: 0;
-  font-family: "PT Sans", sans-serif;
-  color: #000000;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-}
-
-h2 {
-  margin: 0;
-}
+@import "global.scss";
