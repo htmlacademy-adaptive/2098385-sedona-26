@@ -9,8 +9,14 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
   margin-top: 38px;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__list {
@@ -20,8 +26,34 @@
   margin: 0;
   margin-bottom: 47px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__item:not(:last-child) {
   margin-right: 6px;
+}
+
+.page-footer__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 42px;
+    margin-top: 36px;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 104px;
+    margin-right: 120px;
+  }
 }

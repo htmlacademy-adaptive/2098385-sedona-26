@@ -6,4 +6,11 @@
   display: block;
   height: 96px;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    right: 40%;
+  }
 }

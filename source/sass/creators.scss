@@ -1,5 +1,12 @@
 .creators {
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .creators__text {
@@ -7,5 +14,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 15px;
 }
