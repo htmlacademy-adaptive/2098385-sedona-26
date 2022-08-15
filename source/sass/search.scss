@@ -20,6 +20,7 @@
 
 .search__description {
   display: block;
+  max-width: 261px;
   margin: 0;
   margin-left: 29px;
   margin-right: 30px;
@@ -27,6 +28,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    min-width: 500px;
+    margin: auto;
+    margin-bottom: 41px;
     font-size: 21px;
     line-height: 26px;
   }

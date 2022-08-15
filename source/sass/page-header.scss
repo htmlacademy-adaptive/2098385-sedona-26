@@ -1,5 +1,9 @@
 .page-header {
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .page-header__logo-image {
@@ -11,6 +15,6 @@
     position: absolute;
     z-index: 1;
     margin: auto;
-    right: 40%;
+    right: 38%;
   }
 }
