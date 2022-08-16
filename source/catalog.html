@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
   <link href="css/style.css" rel="stylesheet">
   </head>
@@ -19,16 +20,24 @@
         </button>
           <ul class="nav__list">
             <li class="nav__item">
+              <div class="nav__wrapper">
               <a class="nav__link" href="index.html">Главная</a>
+            </div>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href=" ">Фото и видео</a>
+              <div class="nav__wrapper">
+              <a class="nav__link nav__link--current" href=" ">Фото и видео</a>
+            </div>
             </li>
             <li class="nav__item">
+              <div class="nav__wrapper">
               <a class="nav__link" href="form.html">Форма отзыва</a>
+            </div>
             </li>
             <li class="nav__item">
+              <div class="nav__wrapper">
               <a class="nav__link" href="https://htmlacademy.ru/">Html Academy</a>
+            </div>
             </li>
           </ul>
       </nav>
@@ -41,19 +50,19 @@
         <div class="main-content__lead lead">
         <h1 class="lead__title">Фото и видео</h1>
         <p class="lead__description">
-          Не можете решиться на путешествие<br>
-          из-за курса? Фотографии помогут вам<br>
+          Не можете решиться на путешествие
+          из-за курса? Фотографии помогут вам
           забыть о политике и экономике.
         </p>
         </div>
       <section class="main-content__catalog catalog">
         <h2 class="visually-hidden">Каталог.</h2>
         <ul class="catalog__list">
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--big">
             <a class="catalog__link" href=" ">
-            <img class="catalog__image" src="img/road.jpg" width="280" height="280" alt="Фото с дорогой.">
+            <img class="catalog__image catalog__image--big" src="img/road.jpg" width="280" height="280" alt="Фото с дорогой.">
           </a>
-            <h3 class="catalog__title">Неродные просторы</h3>
+            <div class="catalog__wrapper"><h3 class="catalog__title">Неродные просторы</h3>
             <p class="catalog__desc">Автор фото: Борис</p>
             <button class="catalog__button" type="button">
               <svg class="catalog__icon" role="img" aria-label="Иконка лайк." width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,12 +72,13 @@
             </button>
               <span class="visually-hidden">Количество лайков.</span>
               <span class="catalog__likes">1350</span>
+            </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href=" ">
             <img class="catalog__image" src="img/cactus.jpg" width="280" height="280" alt="Фото с растениями.">
           </a>
-            <h3 class="catalog__title">Местная растительность</h3>
+          <div class="catalog__wrapper"><h3 class="catalog__title">Местная растительность</h3>
             <p class="catalog__desc">Автор фото: Сергей</p>
             <button class="catalog__button" type="button">
               <svg class="catalog__icon" role="img" aria-label="Иконка лайк." width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,12 +88,13 @@
             </button>
               <span class="visually-hidden">Количество лайков.</span>
               <span class="catalog__likes">143</span>
+          </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href=" ">
             <img class="catalog__image" src="img/forestroad.jpg" width="280" height="280" alt="Фото леса и дороги.">
             </a>
-            <h3 class="catalog__title">Дорога на север</h3>
+            <div class="catalog__wrapper"><h3 class="catalog__title">Дорога на север</h3>
             <p class="catalog__desc">Автор фото: Петр</p>
             <button class="catalog__button" type="button">
               <svg class="catalog__icon" role="img" aria-label="Иконка лайк." width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,12 +104,13 @@
             </button>
               <span class="visually-hidden">Количество лайков.</span>
               <span class="catalog__likes">96</span>
+            </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href=" ">
             <img class="catalog__image" src="img/bridge.jpg" width="280" height="280" alt="Фото - Мост дьявола.">
           </a>
-            <h3 class="catalog__title">Мост дьявола</h3>
+          <div class="catalog__wrapper"><h3 class="catalog__title">Мост дьявола</h3>
             <p class="catalog__desc">Автор фото: Антон</p>
             <button class="catalog__button" type="button">
               <svg class="catalog__icon" role="img" aria-label="Иконка лайк." width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,11 +120,12 @@
             </button>
               <span class="visually-hidden">Количество лайков.</span>
               <span class="catalog__likes">254</span>
+          </div>
           </li>
         </ul>
         <div class="catalog__video video">
           <h2 class="video__title">Всё ещё сомневаетесь?</h2>
-          <p class="video__desc">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
+          <p class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
           <img class="video__img" src="img/video.jpg" width="280" height="177" alt="Видео.">
           <a class="catalog__link" href=" ">
             <svg class="catalog__play" role="img" aria-label="Запустить видео." width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,8 +138,10 @@
     </main>
     <footer class="body__footer page-footer">
       <h2 class="page-footer__title visually-hidden">Ссылки на социальные сети.</h2>
-    <span class="page-footer__tag">#visitsedona</span>
-    <ul class="page-footer__list">
+      <ul class="page-footer__list-wrapper">
+    <li class="page-footer__item-wrapper"><span class="page-footer__tag">#visitsedona</span></li>
+    <li class="page-footer__item-wrapper">
+      <ul class="page-footer__list">
       <li class="page-footer__item">
         <a class="page-footer__link page-footer__link--vk" href="https://vk.com/htmlacademy">
           <svg class="page-footer__icon" role="img" aria-label="Иконка вконтакте." width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h48v48H0z"/><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948c.166-.546 0-.948-.795-.948H32.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738v-5.109c0-.656-.184-.948-.74-.948h-4.128c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885-.249-.715-.501-1.003-1.172-1.003H12.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551C18.315 29.341 21.37 31 24.153 31c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C31.11 30.216 31.403 31 32.405 31h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z" fill="#fff"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 12)" d="M0 0h24v24H0z"/></clipPath>
@@ -148,6 +163,8 @@
         <span class="visually-hidden">Ютюб.</span>
       </li>
     </ul>
+  </li>
+  <li class="page-footer__item-wrapper">
     <section class="page-footer__creators creators">
       <h2 class="creators__text">Разработано</h2>
       <a class="creators__link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -156,6 +173,8 @@
       </a>
       <span class="visually-hidden">Ссылка на Html Academy.</span>
     </section>
+  </li>
+      </ul>
 </footer>
   </body>
   </html>

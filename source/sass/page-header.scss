@@ -1,3 +1,20 @@
 .page-header {
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+  height: 96px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    right: 38%;
+  }
 }
