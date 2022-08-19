@@ -57,9 +57,10 @@
         </p>
         </div>
         <section class="body__form form">
+          <h2 class="visually-hidden">Форма отзыва</h2>
           <form class="form__review review" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="review__name name">
-            <h2 class="name__title">Представьтесь:</h2>
+            <fieldset class="review__name name">
+            <legend class="name__title">Представьтесь:</legend>
             <div class="name__field">
             <label class="name__lable" for="first-name">
               Имя*:
@@ -78,9 +79,9 @@
             </label>
             <input class="name__write" type="text" value="Викторович" id="patron-name" name="patron__title">
           </div>
-            </div>
-            <div class="review__contacts contacts">
-              <h2 class="contacts__title">Контактная информация:</h2>
+            </fieldset>
+            <fieldset class="review__contacts contacts">
+              <legend class="contacts__title">Контактная информация:</legend>
               <div class="contacts__field">
                 <label class="contacts__lable" for="phone">Контактный телефон*:</label>
                 <input class="contacts__tel" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите телефон" id="phone" name="number">
@@ -89,9 +90,9 @@
                 <label class="contacts__lable" for="e-mail">Электронная почта*:</label>
                 <input class="contacts__mail" type="email" value="Введите e-mail" id="e-mail" name="mail">
               </div>
-            </div>
-            <div class="review__radio radio">
-              <h2 class="radio__title">Ваше общее впечатление:</h2>
+            </fieldset>
+            <fieldset class="review__radio radio">
+              <legend class="radio__title">Ваше общее впечатление:</legend>
               <ul class="radio__list">
                 <li class="radio__item">
                   <label class="radio__option">
@@ -112,9 +113,9 @@
                   </label>
                 </li>
               </ul>
-            </div>
-            <div class="review__check check">
-              <h2 class="check__title">Посещённые<br> достопримечательности:</h2>
+            </fieldset>
+            <fieldset class="review__check check">
+              <legend class="check__title">Посещённые<br> достопримечательности:</legend>
               <ul class="check__list">
                 <li class="check__item">
                   <label class="check__label">
@@ -141,13 +142,13 @@
                   </label>
                 </li>
               </ul>
-            </div>
-            <div class="review__area area">
-              <h2 class="area__title">Опишите свои эмоции:</h2>
+            </fieldset>
+            <fieldset class="review__area area">
+              <legend class="area__title">Опишите свои эмоции:</legend>
               <textarea class="area__comment" name="comment" id="comment-area" rows="10">
                 Опишите подробно все свои восторги
               </textarea>
-            </div>
+            </fieldset>
             <button class="review__button button" type="submit">Отправить отзыв</button>
             <p class="review__rule">*-обязательные поля</p>
           </form>
