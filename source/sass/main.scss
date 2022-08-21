@@ -15,4 +15,11 @@
   margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 85px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+    padding-top: 133px;
+    padding-bottom: 90px;
+  }
 }

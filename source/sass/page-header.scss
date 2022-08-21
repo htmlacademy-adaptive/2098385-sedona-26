@@ -17,4 +17,8 @@
     z-index: 1;
     right: 38%;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 42%;
+  }
 }
