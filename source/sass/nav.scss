@@ -9,6 +9,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     background-color: #ffffff;
     z-index: 0;
   }
