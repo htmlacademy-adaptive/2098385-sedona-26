@@ -44,6 +44,14 @@
   }
 }
 
+.page-footer__icon--d {
+  fill: #ffffff;
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
 .page-footer__item:not(:last-child) {
   margin-right: 6px;
 }
