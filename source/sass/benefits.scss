@@ -50,18 +50,33 @@
   background-image: url("../img/house.svg");
   background-repeat: no-repeat;
   background-position: 18px 25px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 75px 72px;
+    background-position: 50% 25%;
+  }
 }
 
 .benefits__item--icon2 {
   background-image: url("../img/burger.svg");
   background-repeat: no-repeat;
   background-position: 18px 25px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 75px 69px;
+    background-position: 50% 25%;
+  }
 }
 
 .benefits__item--icon3 {
   background-image: url("../img/gift.svg");
   background-repeat: no-repeat;
   background-position: 18px 25px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 63px 75px;
+    background-position: 50% 25%;
+  }
 }
 
 .benefits__description--number {

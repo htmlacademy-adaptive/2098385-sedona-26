@@ -2,26 +2,32 @@
   margin: 0;
 }
 
-.contacts__tel {
-  border: 0;
+.contacts__input {
   background-color: #f2f2f2;
+  border: 4px solid transparent;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   margin: 0;
-  color: #000000;
-  opacity: 30%;
-}
+  margin-bottom: 37px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  width: 87%;
 
-.contacts__mail {
-  border: 0;
-  background-color: #f2f2f2;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  margin: 0;
-  color: #000000;
-  opacity: 30%;
+  &:focus {
+    background-color: #f2f2f2;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    color: #000000;
+  }
+
+  &:active {
+    color: #000000;
+    background: none;
+    border: solid 4px #e5e5e5;
+  }
 }
 
 .contacts__title {
@@ -30,8 +36,19 @@
   font-weight: 700;
   line-height: 26px;
   margin: 0;
+  text-align: center;
+  padding-top: 24px;
+  margin-bottom: 41px;
+}
+
+.contacts__field {
+  position: relative;
 }
 
 .contacts__lable {
   text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: -23px;
+  left: 14px;
 }
