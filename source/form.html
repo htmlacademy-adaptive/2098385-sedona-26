@@ -79,11 +79,11 @@
             </fieldset>
             <fieldset class="review__contacts contacts">
               <legend class="contacts__title">Контактная информация:</legend>
-              <div class="contacts__field">
+              <div class="contacts__field contacts__field--phone">
                 <label class="contacts__lable" for="phone">Контактный телефон*:</label>
                 <input class="contacts__input" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите телефон" id="phone" name="number">
               </div>
-              <div class="contacts__field">
+              <div class="contacts__field contacts__field--mail">
                 <label class="contacts__lable" for="e-mail">Электронная почта*:</label>
                 <input class="contacts__input" type="email" value="Введите e-mail" id="e-mail" name="mail">
               </div>
@@ -94,21 +94,21 @@
                 <li class="radio__item">
                   <label class="radio__option">
                     <input class="visually-hidden radio__input" type="radio" name="feel" value="good-feel" checked>
-                    <span class="control-mark"></span>
+                    <span class="radio__mark"></span>
                           <span class="radio__control">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="radio__item">
                   <label class="radio__option">
                     <input class="visually-hidden radio__input" type="radio" name="feel" value="bad-feel">
-                    <span class="control-mark"></span>
+                    <span class="radio__mark"></span>
                           <span class="radio__control">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="radio__item">
                   <label class="radio__option">
                     <input class="visually-hidden radio__input" type="radio" name="feel" value="idn-feel">
-                    <span class="control-mark"></span>
+                    <span class="radio__mark"></span>
                           <span class="radio__control">Затрудняюсь ответить</span>
                   </label>
                 </li>
@@ -119,25 +119,29 @@
               <ul class="check__list">
                 <li class="check__item">
                   <label class="check__label">
-                    <input class="check__input" type="checkbox" name="place1" checked>
+                    <input class="visually-hidden check__input" type="checkbox" name="place1" checked>
+                    <span class="check__mark"></span>
                           <span class="check__control">Мост дьявола</span>
                   </label>
                 </li>
                 <li class="check__item">
                   <label class="check__label">
-                    <input class="check__input" type="checkbox" name="place2" checked>
+                    <input class="visually-hidden check__input" type="checkbox" name="place2" checked>
+                    <span class="check__mark"></span>
                           <span class="check__control">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="check__item">
                   <label class="check__label">
-                    <input class="check__input" type="checkbox" name="place3" checked>
+                    <input class="visually-hidden check__input" type="checkbox" name="place3" checked>
+                    <span class="check__mark"></span>
                           <span class="check__control">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="check__item">
                   <label class="check__label">
-                    <input class="check__input" type="checkbox" name="place4">
+                    <input class="visually-hidden check__input" type="checkbox" name="place4">
+                    <span class="check__mark"></span>
                           <span class="check__control">Красные скалы</span>
                   </label>
                 </li>

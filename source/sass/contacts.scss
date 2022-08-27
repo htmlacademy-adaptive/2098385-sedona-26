@@ -43,6 +43,39 @@
 
 .contacts__field {
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    background-color: #e6e6e6;
+    right: 0;
+  }
+}
+
+.contacts__field--phone {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.contacts__field--mail {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .contacts__lable {
@@ -51,4 +84,8 @@
   position: absolute;
   top: -23px;
   left: 14px;
+}
+
+.contacts__field__container {
+  position: relative;
 }

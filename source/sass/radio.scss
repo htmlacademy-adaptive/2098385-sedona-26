@@ -24,3 +24,36 @@
   padding-top: 24px;
   margin-bottom: 30px;
 }
+
+.radio__option {
+  position: relative;
+}
+
+.radio__mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  left: -70px;
+  top: -10px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.radio__input[type="radio"]:checked + .radio__mark::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/radiocircle.svg");
+  background-repeat: no-repeat;
+  top: 15px;
+  left: 15px;
+}
