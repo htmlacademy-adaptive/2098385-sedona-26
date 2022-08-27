@@ -52,12 +52,18 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    max-width: 458px;
+    max-width: 435px;
     margin-left: 155px;
-    margin-bottom: 65px;
+    margin-bottom: 102px;
+    padding-bottom: 0;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 370px;
+    margin-bottom: 67px;
   }
 }

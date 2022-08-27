@@ -1,16 +1,26 @@
 .review {
   margin: 0;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
-    margin-left: 60px;
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: auto;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 120px;
+    grid-template-columns: 480px 480px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -42,6 +52,10 @@
   &:disabled {
     background-color: #e5e5e5;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 95px;
+  }
 }
 
 .review__rule {
@@ -52,6 +66,17 @@
   opacity: 60%;
   margin: 0;
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 95px;
+  }
 }
 
 .review__radio {
@@ -130,6 +155,14 @@
       display: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .review__contacts {
@@ -150,5 +183,13 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 78px;
   }
 }
