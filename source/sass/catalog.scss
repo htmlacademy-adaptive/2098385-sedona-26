@@ -133,6 +133,8 @@
 
 .catalog__image {
   display: block;
+  width: 100%;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     width: 324px;

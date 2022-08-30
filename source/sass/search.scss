@@ -44,11 +44,9 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  padding: 16px 49px;
+  padding: 16px;
   max-width: 284px;
-  margin: 0 auto;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     min-width: 458px;
