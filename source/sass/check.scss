@@ -112,10 +112,10 @@
   &:hover {
     background-color: #e5e5e5;
   }
+}
 
-  &:active {
-    background-color: #d5d5d5;
-  }
+.check__input[type="checkbox"]:focus + .check__mark {
+  background-color: #d5d5d5;
 }
 
 .check__input[type="checkbox"]:checked + .check__mark::before {

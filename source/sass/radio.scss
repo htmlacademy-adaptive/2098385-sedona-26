@@ -106,10 +106,10 @@
   &:hover {
     background-color: #e5e5e5;
   }
+}
 
-  &:active {
-    background-color: #d5d5d5;
-  }
+.radio__input[type="radio"]:focus + .radio__mark {
+  background-color: #d5d5d5;
 }
 
 .radio__input[type="radio"]:checked + .radio__mark::before {
