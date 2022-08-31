@@ -128,14 +128,11 @@
   outline: 0;
   text-align: left;
 }
-.area__comment:focus {
-  background-color: #f2f2f2;
-}
 .area__comment:hover {
   background-color: #e5e5e5;
   color: #000000;
 }
-.area__comment:active {
+.area__comment:focus {
   color: #000000;
   background: none;
   border: solid 4px #e5e5e5;
@@ -528,6 +525,8 @@
 
 .catalog__image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 768px) {
   .catalog__image {
@@ -672,7 +671,8 @@
 .check__mark:hover {
   background-color: #e5e5e5;
 }
-.check__mark:active {
+
+.check__input[type=checkbox]:focus + .check__mark {
   background-color: #d5d5d5;
 }
 
@@ -718,14 +718,11 @@
   padding: 16px;
   width: 87%;
 }
-.contacts__input:focus {
-  background-color: #f2f2f2;
-}
 .contacts__input:hover {
   background-color: #e5e5e5;
   color: #000000;
 }
-.contacts__input:active {
+.contacts__input:focus {
   color: #000000;
   background: none;
   border: solid 4px #e5e5e5;
@@ -1220,14 +1217,11 @@
   width: 87%;
   margin-bottom: 37px;
 }
-.name__write:focus {
-  background-color: #f2f2f2;
-}
 .name__write:hover {
   background-color: #e5e5e5;
   color: #000000;
 }
-.name__write:active {
+.name__write:focus {
   color: #000000;
   background: none;
   border: solid 4px #e5e5e5;
@@ -1684,7 +1678,8 @@
 .radio__mark:hover {
   background-color: #e5e5e5;
 }
-.radio__mark:active {
+
+.radio__input[type=radio]:focus + .radio__mark {
   background-color: #d5d5d5;
 }
 
@@ -1951,11 +1946,9 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  padding: 16px 49px;
+  padding: 16px;
   max-width: 284px;
-  margin: 0 auto;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin: auto;
 }
 @media (min-width: 768px) {
   .search__link {
