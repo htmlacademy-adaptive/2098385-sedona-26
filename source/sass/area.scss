@@ -1,5 +1,5 @@
 .area {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .area__title {
@@ -7,12 +7,96 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  padding-top: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .area__title {
+    position: relative;
+    margin-bottom: 28px;
+  }
+
+  .area__title::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: -210px;
+    top: 35px;
+  }
+
+  .area__title::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: 312px;
+    top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .area__title {
+    position: relative;
+  }
+
+  .area__title::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: -367px;
+    top: 35px;
+  }
+
+  .area__title::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: 312px;
+    top: 35px;
+  }
 }
 
 .area__comment {
-  color: #000000;
-  opacity: 30%;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 56px;
+  min-width: 279px;
+  height: 150px;
+  background-color: #f2f2f2;
+  border: 0;
+  outline: 0;
+  text-align: left;
+
+  &:hover {
+    background-color: #e5e5e5;
+    color: #000000;
+  }
+
+  &:focus {
+    color: #000000;
+    background: none;
+    border: solid 4px #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    min-height: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+  }
 }

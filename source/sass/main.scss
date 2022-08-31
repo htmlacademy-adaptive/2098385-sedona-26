@@ -3,6 +3,7 @@
 }
 
 .main__pic {
+  position: relative;
   background-color: #81b3d2;
   background-image: url("../img/backmob1.jpg");
   background-repeat: no-repeat;
@@ -15,4 +16,11 @@
   margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 85px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+    padding-top: 133px;
+    padding-bottom: 90px;
+  }
 }

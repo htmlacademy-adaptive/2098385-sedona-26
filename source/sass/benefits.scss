@@ -46,6 +46,39 @@
   }
 }
 
+.benefits__item--icon1 {
+  background-image: url("../img/house.svg");
+  background-repeat: no-repeat;
+  background-position: 18px 25px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 75px 72px;
+    background-position: 50% 25%;
+  }
+}
+
+.benefits__item--icon2 {
+  background-image: url("../img/burger.svg");
+  background-repeat: no-repeat;
+  background-position: 18px 25px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 75px 69px;
+    background-position: 50% 25%;
+  }
+}
+
+.benefits__item--icon3 {
+  background-image: url("../img/gift.svg");
+  background-repeat: no-repeat;
+  background-position: 18px 25px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 63px 75px;
+    background-position: 50% 25%;
+  }
+}
+
 .benefits__description--number {
   display: block;
   margin-bottom: 17px;
@@ -103,6 +136,7 @@
 }
 
 .benefits__item--view {
+  position: relative;
   background-color: #eeeeee;
   padding: 25px;
   padding-left: 35px;
@@ -123,6 +157,25 @@
     margin: 0;
     min-height: 256px;
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #d6d6d6;
+    text-align: center;
+    width: 85%;
+    height: 1px;
+    z-index: 1;
+    bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.benefits__item--view:last-child::after {
+  display: none;
 }
 
 .benefits__item-wrapper--one {

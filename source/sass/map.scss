@@ -1,4 +1,29 @@
 .map {
-  display: block;
   margin: o;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-color: #81b3d3;
+    border-radius: 50%;
+    border: solid 5px #ffffff;
+    bottom: 50%;
+    left: 50%;
+  }
+}
+
+.map iframe {
+  border: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
 }

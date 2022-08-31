@@ -7,14 +7,20 @@
 }
 
 .page-header__logo-image {
+  position: relative;
   display: block;
   height: 96px;
   margin: auto;
+  margin-bottom: -40px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: 1;
-    margin: auto;
     right: 38%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 42%;
   }
 }

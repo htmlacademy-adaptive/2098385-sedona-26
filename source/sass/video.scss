@@ -1,5 +1,6 @@
 .video {
   margin: 0;
+  position: relative;
 }
 
 .video__title {
@@ -10,6 +11,7 @@
   font-weight: 700;
   line-height: 26px;
   margin: 0;
+  margin-top: 17px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -51,4 +53,10 @@
   @media (min-width: $desktop-width) {
     width: 800px;
   }
+}
+
+.video__play {
+  position: absolute;
+  top: 60%;
+  left: 45%;
 }

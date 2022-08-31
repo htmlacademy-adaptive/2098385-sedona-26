@@ -6,6 +6,16 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-left: 82px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 240px 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 236px 236px 236px 236px;
+  }
 }
 
 .check__title {
@@ -13,10 +23,108 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  padding-top: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .check__title {
+    position: relative;
+    margin-bottom: 38px;
+    margin-right: 263px;
+  }
+
+  .check__title::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: -200px;
+    top: 35px;
+  }
+
+  .check__title::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: 320px;
+    top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .check__title {
+    position: relative;
+    margin-bottom: 55px;
+    margin-right: 447px;
+  }
+
+  .check__title::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: -390px;
+    top: 35px;
+  }
+
+  .check__title::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: 290px;
+    top: 35px;
+  }
 }
 
 .check__item {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.check__label {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.check__mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  left: -70px;
+  top: -10px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+}
+
+.check__input[type="checkbox"]:focus + .check__mark {
+  background-color: #d5d5d5;
+}
+
+.check__input[type="checkbox"]:checked + .check__mark::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  top: 13px;
+  left: 15px;
 }

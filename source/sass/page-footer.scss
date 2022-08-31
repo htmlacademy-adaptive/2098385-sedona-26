@@ -32,6 +32,26 @@
   }
 }
 
+.page-footer__icon {
+  fill: #81b3d2;
+
+  &:hover {
+    fill: #669ec0;
+  }
+
+  &:active {
+    fill: #5496bd;
+  }
+}
+
+.page-footer__inside-icon {
+  fill: #ffffff;
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
 .page-footer__item:not(:last-child) {
   margin-right: 6px;
 }

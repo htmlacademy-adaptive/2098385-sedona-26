@@ -18,3 +18,15 @@
   margin-top: 10px;
   margin-right: 15px;
 }
+
+.creators__icon {
+  fill: #000000;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b3b3b3;
+  }
+}

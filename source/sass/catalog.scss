@@ -1,9 +1,9 @@
 .catalog {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .catalog__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
 
@@ -24,8 +24,11 @@
 }
 
 .catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding-top: 15px;
+  padding-right: 27px;
 
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
@@ -35,8 +38,27 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #000000;
-    opacity: 30%;
+    color: #ffffff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 80px;
+      background-color: #000000;
+      opacity: 30%;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.catalog__wrapper--dark {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $desktop-width) {
     color: #ffffff;
   }
 }
@@ -66,6 +88,7 @@
 }
 
 .catalog__item {
+  position: relative;
   padding-top: 24px;
   padding-left: 20px;
   padding-right: 20px;
@@ -74,6 +97,20 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    bottom: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -94,13 +131,10 @@
   padding-right: 20px;
 }
 
-.catalog__play {
-  position: absolute;
-  left: 50%;
-}
-
 .catalog__image {
   display: block;
+  width: 100%;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -110,6 +144,7 @@
   @media (min-width: $desktop-width) {
     width: 400px;
     height: 267px;
+    margin-bottom: -80px;
   }
 }
 

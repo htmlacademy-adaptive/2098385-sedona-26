@@ -11,11 +11,8 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
       </a>
-      <nav class="page-header__nav nav">
+      <nav class="page-header__nav nav nav--closed nav--nojs">
         <button class="nav__toggle button" type="button">
-          <svg class="nav__icon" role="img" aria-label="Открыть меню навигации." width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/>
-          </svg>
         <span class="visually-hidden">Открыть меню.</span>
         </button>
           <ul class="nav__list">
@@ -62,8 +59,12 @@
             <a class="catalog__link" href=" ">
             <img class="catalog__image catalog__image--big" src="img/road.jpg" width="280" height="280" alt="Фото с дорогой.">
           </a>
-            <div class="catalog__wrapper"><h3 class="catalog__title">Неродные просторы</h3>
+            <div class="catalog__wrapper">
+            <div class="catalog__desc-left">
+              <h3 class="catalog__title">Неродные просторы</h3>
             <p class="catalog__desc">Автор фото: Борис</p>
+            </div>
+            <div class="catalog__desc-right">
             <button class="catalog__button" type="button">
               <svg class="catalog__icon" role="img" aria-label="Иконка лайк." width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
@@ -73,13 +74,18 @@
               <span class="visually-hidden">Количество лайков.</span>
               <span class="catalog__likes">1350</span>
             </div>
+            </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href=" ">
             <img class="catalog__image" src="img/cactus.jpg" width="280" height="280" alt="Фото с растениями.">
           </a>
-          <div class="catalog__wrapper"><h3 class="catalog__title">Местная растительность</h3>
+          <div class="catalog__wrapper">
+            <div class="catalog__desc-left">
+              <h3 class="catalog__title">Местная растительность</h3>
             <p class="catalog__desc">Автор фото: Сергей</p>
+            </div>
+            <div class="catalog__desc-right">
             <button class="catalog__button" type="button">
               <svg class="catalog__icon" role="img" aria-label="Иконка лайк." width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
@@ -88,14 +94,19 @@
             </button>
               <span class="visually-hidden">Количество лайков.</span>
               <span class="catalog__likes">143</span>
+            </div>
           </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href=" ">
             <img class="catalog__image" src="img/forestroad.jpg" width="280" height="280" alt="Фото леса и дороги.">
             </a>
-            <div class="catalog__wrapper"><h3 class="catalog__title">Дорога на север</h3>
+            <div class="catalog__wrapper catalog__wrapper--dark">
+              <div class="catalog__desc-left">
+              <h3 class="catalog__title">Дорога на север</h3>
             <p class="catalog__desc">Автор фото: Петр</p>
+              </div>
+              <div class="catalog__desc-right">
             <button class="catalog__button" type="button">
               <svg class="catalog__icon" role="img" aria-label="Иконка лайк." width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
@@ -104,14 +115,19 @@
             </button>
               <span class="visually-hidden">Количество лайков.</span>
               <span class="catalog__likes">96</span>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href=" ">
             <img class="catalog__image" src="img/bridge.jpg" width="280" height="280" alt="Фото - Мост дьявола.">
           </a>
-          <div class="catalog__wrapper"><h3 class="catalog__title">Мост дьявола</h3>
+          <div class="catalog__wrapper">
+            <div class="catalog__desc-left">
+            <h3 class="catalog__title">Мост дьявола</h3>
             <p class="catalog__desc">Автор фото: Антон</p>
+            </div>
+            <div class="catalog__desc-right">
             <button class="catalog__button" type="button">
               <svg class="catalog__icon" role="img" aria-label="Иконка лайк." width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
@@ -120,6 +136,7 @@
             </button>
               <span class="visually-hidden">Количество лайков.</span>
               <span class="catalog__likes">254</span>
+            </div>
           </div>
           </li>
         </ul>
@@ -127,8 +144,8 @@
           <h2 class="video__title">Всё ещё сомневаетесь?</h2>
           <p class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
           <img class="video__img" src="img/video.jpg" width="280" height="177" alt="Видео.">
-          <a class="catalog__link" href=" ">
-            <svg class="catalog__play" role="img" aria-label="Запустить видео." width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="video__link" href=" ">
+            <svg class="video__play" role="img" aria-label="Запустить видео." width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z" fill="white" fill-opacity="0.7"/>
               </svg>
           </a>
@@ -144,21 +161,21 @@
       <ul class="page-footer__list">
       <li class="page-footer__item">
         <a class="page-footer__link page-footer__link--vk" href="https://vk.com/htmlacademy">
-          <svg class="page-footer__icon" role="img" aria-label="Иконка вконтакте." width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h48v48H0z"/><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948c.166-.546 0-.948-.795-.948H32.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738v-5.109c0-.656-.184-.948-.74-.948h-4.128c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885-.249-.715-.501-1.003-1.172-1.003H12.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551C18.315 29.341 21.37 31 24.153 31c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C31.11 30.216 31.403 31 32.405 31h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z" fill="#fff"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 12)" d="M0 0h24v24H0z"/></clipPath>
+          <svg class="page-footer__icon" role="img" aria-label="Иконка вконтакте." width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z"/><g class="page-footer__inside-icon" clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948c.166-.546 0-.948-.795-.948H32.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738v-5.109c0-.656-.184-.948-.74-.948h-4.128c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885-.249-.715-.501-1.003-1.172-1.003H12.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551C18.315 29.341 21.37 31 24.153 31c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C31.11 30.216 31.403 31 32.405 31h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"/></g><defs><clipPath id="a"><path transform="translate(12 12)" d="M0 0h24v24H0z"/></clipPath>
           </defs></svg>
         </a>
         <span class="visually-hidden">Вконтакте.</span>
       </li>
       <li class="page-footer__item">
         <a class="page-footer__link page-footer__link--tg" href="https://t.me/htmlacademy">
-          <svg class="page-footer__icon" role="img" aria-label="Иконка Телеграмм." width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h48v48H0z"/><path d="m34.44 16.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.558-2.33 2.242c-.258.258-.473.473-.97.473l.347-4.917 8.948-8.086c.39-.346-.084-.54-.604-.192l-11.063 6.966-4.762-1.491c-1.036-.323-1.055-1.036.216-1.533l18.627-7.177c.863-.323 1.617.192 1.336 1.51Z" fill="#fff"/>
+          <svg class="page-footer__icon" role="img" aria-label="Иконка Телеграмм." width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z"/><path class="page-footer__inside-icon" d="m34.44 16.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.558-2.33 2.242c-.258.258-.473.473-.97.473l.347-4.917 8.948-8.086c.39-.346-.084-.54-.604-.192l-11.063 6.966-4.762-1.491c-1.036-.323-1.055-1.036.216-1.533l18.627-7.177c.863-.323 1.617.192 1.336 1.51Z"/>
           </svg>
         </a>
         <span class="visually-hidden">Телеграмм.</span>
       </li>
       <li class="page-footer__item">
         <a class="page-footer__link page-footer__link--yt" href="https://www.youtube.com/user/htmlacademyru">
-          <svg class="page-footer__icon" role="img" aria-label="Иконка Youtube." width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h48v48H0z"/><path d="M31.181 17H16.813C15.306 17 14 18.3 14 19.8v8.3c0 1.6 1.306 2.9 2.813 2.9h14.368c1.608 0 2.814-1.3 2.814-2.8v-8.4c.1-1.5-1.206-2.8-2.814-2.8ZM21.033 27.4v-6.8l6.833 3.4-6.833 3.4Z" fill="#fff"/></svg>
+          <svg class="page-footer__icon" role="img" aria-label="Иконка Youtube." width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z"/><path class="page-footer__inside-icon" d="M31.181 17H16.813C15.306 17 14 18.3 14 19.8v8.3c0 1.6 1.306 2.9 2.813 2.9h14.368c1.608 0 2.814-1.3 2.814-2.8v-8.4c.1-1.5-1.206-2.8-2.814-2.8ZM21.033 27.4v-6.8l6.833 3.4-6.833 3.4Z" /></svg>
         </a>
         <span class="visually-hidden">Ютюб.</span>
       </li>
@@ -168,7 +185,7 @@
     <section class="page-footer__creators creators">
       <h2 class="creators__text">Разработано</h2>
       <a class="creators__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="creators__icon" role="img" aria-label="Ссылка на HTML academy." width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/>
+        <svg class="creators__icon" role="img" aria-label="Ссылка на HTML academy." width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
         </svg>
       </a>
       <span class="visually-hidden">Ссылка на Html Academy.</span>
@@ -176,5 +193,6 @@
   </li>
       </ul>
 </footer>
+<script src="js/script.js"></script>
   </body>
   </html>

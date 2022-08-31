@@ -2,26 +2,48 @@
   margin: 0;
 }
 
-.contacts__tel {
-  border: 0;
-  background-color: #f2f2f2;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  margin: 0;
-  color: #000000;
-  opacity: 30%;
+@media (min-width: $tablet-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 338px;
+    background-color: #dbdbdb;
+    left: 7px;
+    top: -60px;
+  }
 }
 
-.contacts__mail {
-  border: 0;
+.contacts__input {
   background-color: #f2f2f2;
+  border: 4px solid transparent;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   margin: 0;
-  color: #000000;
-  opacity: 30%;
+  margin-bottom: 37px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  width: 87%;
+
+  &:hover {
+    background-color: #e5e5e5;
+    color: #000000;
+  }
+
+  &:focus {
+    color: #000000;
+    background: none;
+    border: solid 4px #e5e5e5;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 402px;
+  }
 }
 
 .contacts__title {
@@ -30,8 +52,61 @@
   font-weight: 700;
   line-height: 26px;
   margin: 0;
+  text-align: center;
+  padding-top: 24px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-bottom: 49px;
+  }
+}
+
+.contacts__field {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    background-color: #e6e6e6;
+    right: 0;
+  }
+}
+
+.contacts__field--phone {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.contacts__field--mail {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .contacts__lable {
   text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: -23px;
+  left: 14px;
+}
+
+.contacts__field__container {
+  position: relative;
 }
