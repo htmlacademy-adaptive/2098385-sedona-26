@@ -87,6 +87,8 @@
 .benefits__picture {
   display: block;
   margin: 0;
+  width: 100%;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     min-width: 512px;
