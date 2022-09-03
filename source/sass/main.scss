@@ -9,6 +9,21 @@
   background-repeat: no-repeat;
   margin: 0 auto;
   background-size: cover;
+  background-position: 45%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backmob@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/backdesktop.jpg");
+    background-position-y: 30%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backdesktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
 }
 
 .main__image {
@@ -20,7 +35,7 @@
   @media (min-width: $tablet-width) {
     width: 461px;
     height: 350px;
-    padding-top: 133px;
+    padding-top: 77px;
     padding-bottom: 90px;
   }
 }
