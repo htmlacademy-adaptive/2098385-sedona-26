@@ -1,17 +1,31 @@
 .nav {
-  position: absolute;
-  z-index: 3;
   width: 100%;
   top: 0;
   background-color: #81b3d2;
   color: #ffffff;
   margin: 0;
+  margin-top: 40px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     position: relative;
     background-color: #ffffff;
     z-index: 0;
+    margin-top: 0;
+  }
+}
+
+.nav--opened {
+  position: absolute;
+  z-index: 3;
+  margin-top: 0;
+}
+
+.nav--closed {
+  margin-top: -40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }
 
@@ -212,10 +226,5 @@
 
   .nav--nojs .nav__toggle {
     display: none;
-  }
-
-  .nav--nojs .nav__list {
-    position: static;
-    display: block;
   }
 }
