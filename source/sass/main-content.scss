@@ -3,6 +3,7 @@
 }
 
 .main-content__pic {
+  position: relative;
   background-color: #81b3d3;
   background-image: url("../img/backmob2.jpg");
   background-repeat: no-repeat;
@@ -20,6 +21,29 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backdesktop2@2x.jpg");
     }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/dev1.svg");
+    width: 50%;
+    height: 57px;
+    background-repeat: no-repeat;
+    background-position: right;
+    bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/dev2.svg");
+    width: 50%;
+    height: 57px;
+    background-repeat: no-repeat;
+    background-position: left;
+    bottom: 0;
+    right: 0;
   }
 }
 
