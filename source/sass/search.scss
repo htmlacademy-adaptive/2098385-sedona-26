@@ -5,7 +5,7 @@
 
 .search__title {
   display: block;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
@@ -27,11 +27,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    min-width: 500px;
+    width: 435px;
     margin: auto;
     margin-bottom: 41px;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -47,6 +47,7 @@
   padding: 16px;
   max-width: 284px;
   margin: auto;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     min-width: 458px;
@@ -68,6 +69,12 @@
 }
 
 .search__wrapper {
-  padding-top: 38px;
+  padding-top: 40px;
   padding-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 }
