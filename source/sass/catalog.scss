@@ -161,3 +161,13 @@
     height: 400px;
   }
 }
+
+.catalog__icon {
+  fill: #000000;
+  opacity: 30%;
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+    opacity: 100%;
+  }
+}

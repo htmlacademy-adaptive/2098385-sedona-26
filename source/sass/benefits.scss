@@ -1,4 +1,5 @@
 .benefits {
+  position: relative;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -7,6 +8,37 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/triangle.svg");
+    width: 50%;
+    height: 37px;
+    background-repeat: no-repeat;
+    background-position: right;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/triangle1.svg");
+    width: 50%;
+    height: 37px;
+    background-repeat: no-repeat;
+    background-position: left;
+    top: 0;
+    right: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -22,6 +54,11 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    text-align: center;
+  }
 }
 
 .benefits__title--advice {
@@ -29,6 +66,8 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    font-size: 21px;
+    margin-bottom: 25px;
   }
 }
 
@@ -82,6 +121,10 @@
 .benefits__description--number {
   display: block;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .benefits__picture {
@@ -183,10 +226,16 @@
 .benefits__item-wrapper--one {
   max-width: 320px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 65px;
   padding-bottom: 40px;
   padding-left: 16px;
   padding-right: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 400px;
@@ -206,6 +255,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {

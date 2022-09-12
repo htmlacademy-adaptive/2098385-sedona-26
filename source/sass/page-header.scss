@@ -24,3 +24,9 @@
     right: 42%;
   }
 }
+
+.nav--nojs .page-header__logo-image {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 0;
+  }
+}

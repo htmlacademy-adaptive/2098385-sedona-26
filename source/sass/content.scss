@@ -18,6 +18,10 @@
     font-size: 21px;
     max-width: 520px;
     margin-top: 47px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +35,7 @@
   margin: 0 auto;
   max-width: 282px;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     max-width: 520px;

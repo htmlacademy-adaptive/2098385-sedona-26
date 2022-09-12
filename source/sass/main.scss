@@ -24,6 +24,29 @@
       background-size: 1200px auto;
     }
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/dev1.svg");
+    width: 50%;
+    height: 57px;
+    background-repeat: no-repeat;
+    background-position: right;
+    bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/dev2.svg");
+    width: 50%;
+    height: 57px;
+    background-repeat: no-repeat;
+    background-position: left;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .main__image {
