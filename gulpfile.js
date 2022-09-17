@@ -6,6 +6,8 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
@@ -34,7 +36,7 @@ export const html = () => {
 // Scripts
 
 export const scripts = () => {
-  return gulp.src('sours/js/*.js')
+  return gulp.src('source/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'))
 }
@@ -61,6 +63,25 @@ export const createWebp = () => {
   webp: {}
   }))
   .pipe(gulp.dest('build/img'))
+  }
+
+  // SVG
+
+export const svg = () =>{
+return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+.pipe(svgo())
+.pipe(gulp.dest('build/img'));
+}
+
+
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({
+  inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
   }
 
 // Server
