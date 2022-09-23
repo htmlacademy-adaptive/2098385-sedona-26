@@ -17,10 +17,10 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/backdesktop.jpg");
-    background-position-y: 30%;
+    background-position-y: 31%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backdesktop@2x.jpg");
+      background-image: url("../img/back-desktop@2x.jpg");
       background-size: 1200px auto;
     }
   }
