@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    margin-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +33,10 @@
 
   &:active {
     fill: #b3b3b3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
   }
 
   @media (min-width: $desktop-width) {

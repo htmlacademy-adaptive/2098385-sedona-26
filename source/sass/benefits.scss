@@ -77,6 +77,8 @@
 }
 
 .benefits__title--place {
+  margin-bottom: 12px;
+
   br {
     display: none;
   }
@@ -167,6 +169,8 @@
   @media (min-width: $tablet-width) {
     background-size: 63px 75px;
     background-position: 50% 25%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -176,10 +180,10 @@
 
 .benefits__description--number {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 }
 
@@ -215,6 +219,11 @@
 }
 
 .benefits__item-wrapper--road {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 30px;
     padding-right: 30px;
@@ -222,6 +231,11 @@
 }
 
 .benefits__item-wrapper--turism {
+  @media (min-width: $tablet-width) {
+    padding-left: 23px;
+    padding-right: 28px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 30px;
     padding-right: 30px;
@@ -230,8 +244,8 @@
 
 .benefits__item--advice {
   background-color: #ffffff;
-  padding-top: 28px;
-  padding-left: 66px;
+  padding-top: 29px;
+  padding-left: 65px;
   padding-right: 18px;
 
   @media (min-width: $tablet-width) {
@@ -351,6 +365,11 @@
 }
 
 .benefits__item-wrapper--advice-two {
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 21px;
     padding-right: 14px;
@@ -360,6 +379,11 @@
 .benefits__item-wrapper--advice-three {
   br {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
