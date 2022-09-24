@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+  }
 }
 
 .creators__text {
@@ -28,5 +32,9 @@
 
   &:active {
     fill: #b3b3b3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
   }
 }

@@ -44,6 +44,7 @@
 
 .benefits__item {
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .benefits__title {
@@ -69,6 +70,32 @@
   }
 }
 
+.benefits__title--bridge {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.benefits__title--place {
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+.benefits__title--one {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
+  }
+}
+
 .benefits__title--advice {
   text-align: start;
 
@@ -83,6 +110,12 @@
   display: block;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
 }
 
 .benefits__description--advice {
@@ -90,6 +123,13 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
   }
 }
 
@@ -101,6 +141,10 @@
   @media (min-width: $tablet-width) {
     background-size: 75px 72px;
     background-position: 50% 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 50% 23%;
   }
 }
 
@@ -123,6 +167,10 @@
   @media (min-width: $tablet-width) {
     background-size: 63px 75px;
     background-position: 50% 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 52% 23%;
   }
 }
 
@@ -163,6 +211,20 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+  }
+}
+
+.benefits__item-wrapper--road {
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.benefits__item-wrapper--turism {
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -248,6 +310,9 @@
   @media (min-width: $desktop-width) {
     max-width: 400px;
     margin: 0;
+    padding-top: 50px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 
@@ -271,5 +336,38 @@
   @media (min-width: $desktop-width) {
     max-width: 400px;
     margin: 0;
+    padding-top: 50px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+.benefits__item-wrapper--advice {
+  @media (min-width: $desktop-width) {
+    padding-left: 31px;
+    padding-right: 25px;
+    padding-top: 2px;
+  }
+}
+
+.benefits__item-wrapper--advice-two {
+  @media (min-width: $desktop-width) {
+    padding-left: 21px;
+    padding-right: 14px;
+  }
+}
+
+.benefits__item-wrapper--advice-three {
+  br {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 55px;
+    padding-right: 40px;
+
+    br {
+      display: block;
+    }
   }
 }

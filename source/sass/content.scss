@@ -5,7 +5,7 @@
 
 .content__title {
   display: block;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   margin: 0 auto;
@@ -27,6 +27,8 @@
   @media (min-width: $desktop-width) {
     margin-top: 59px;
     max-width: 483px;
+    margin-left: 356px;
+    margin-bottom: 32px;
   }
 }
 
@@ -40,5 +42,9 @@
   @media (min-width: $tablet-width) {
     max-width: 520px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
   }
 }
