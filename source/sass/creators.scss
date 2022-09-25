@@ -4,6 +4,7 @@
   justify-content: center;
   margin-bottom: 29px;
 
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     margin-top: 3px;
@@ -24,15 +25,19 @@
   margin-right: 15px;
 }
 
-.creators__icon {
-  fill: #000000;
+.creators__link {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;
+  vertical-align: middle;
 
   &:hover {
-    fill: #81b3d2;
+    color: #81b3d2;
   }
 
   &:active {
-    fill: #b3b3b3;
+    color: #b3b3b3;
   }
 
   @media (min-width: $tablet-width) {
@@ -42,4 +47,9 @@
   @media (min-width: $desktop-width) {
     margin-top: 2px;
   }
+}
+
+.creators__icon {
+  display: inline-block;
+  vertical-align: middle;
 }

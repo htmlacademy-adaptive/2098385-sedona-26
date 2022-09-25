@@ -52,7 +52,7 @@
       </div>
         <div class="main-content__lead lead lead--form">
         <h1 class="lead__title lead__title--form">Оставьте свой отзыв</h1>
-        <p class="lead__description lead__description">
+        <p class="lead__description lead__description--form">
           Помогите нашим отелям стать лучше!<br>
           оставьте отзыв о них, а также о<br>
           посещенных вами<br>
@@ -87,7 +87,7 @@
               <legend class="contacts__title">Контактная информация:</legend>
               <div class="contacts__field contacts__field--phone">
                 <label class="contacts__lable" for="phone">Контактный телефон*:</label>
-                <input class="contacts__input" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите телефон" id="phone" name="number">
+                <input class="contacts__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ" value="Введите телефон" id="phone" name="tel">
               </div>
               <div class="contacts__field contacts__field--mail">
                 <label class="contacts__lable" for="e-mail">Электронная почта*:</label>
@@ -198,8 +198,9 @@
     </li>
     <li class="page-footer__item-wrapper">
       <section class="page-footer__creators creators">
-        <h2 class="creators__text">Разработано</h2>
+        <h2 class="visually-hidden">Разработано</h2>
         <a class="creators__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
           <svg class="creators__icon" width="27" height="35" role="img" aria-label="Ссылка на HTML academy.">
             <use xlink:href="img/sprite.svg#htmlacademyy"></use>
           </svg>
