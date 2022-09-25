@@ -1,10 +1,10 @@
 .lead {
   position: relative;
   margin: 0;
-  margin-top: 33px;
+  margin-top: 37px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 62px;
+    margin-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +29,7 @@
 .lead__title {
   display: block;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
@@ -38,23 +38,34 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.lead__title--catalog {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
   }
 }
 
 .lead__description {
   display: block;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 24px;
   margin-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 36px;
   text-transform: uppercase;
   min-width: 280px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     max-width: 435px;
-    margin-left: 155px;
-    margin-bottom: 102px;
+    margin-left: 166px;
+    margin-bottom: 105px;
     padding-bottom: 0;
 
     br {
@@ -63,7 +74,32 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 370px;
-    margin-bottom: 67px;
+    margin-left: 380px;
+    margin-bottom: 90px;
+  }
+}
+
+.lead__description--catalog {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+
+.lead--form {
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
+  }
+}
+
+.lead__title--form {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.lead__description--form {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
   }
 }

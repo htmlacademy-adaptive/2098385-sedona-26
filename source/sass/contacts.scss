@@ -13,8 +13,14 @@
     width: 1px;
     height: 338px;
     background-color: #dbdbdb;
-    left: 7px;
-    top: -60px;
+    left: 0;
+    top: -75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts::before {
+    left: 12px;
   }
 }
 
@@ -25,9 +31,9 @@
   font-weight: 700;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
   color: rgba(0, 0, 0, 0.3);
-  padding: 16px;
+  padding: 12px;
   width: 87%;
 
   &:hover {
@@ -39,6 +45,10 @@
     color: #000000;
     background: none;
     border: solid 4px #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,12 +63,18 @@
   line-height: 26px;
   margin: 0;
   text-align: center;
-  padding-top: 24px;
+  padding-top: 29px;
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     margin-bottom: 49px;
+    margin-left: -20px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -30px;
   }
 }
 
@@ -68,8 +84,8 @@
   &::before {
     content: "";
     position: absolute;
-    width: 66px;
-    height: 66px;
+    width: 58px;
+    height: 58px;
     background-color: #e6e6e6;
     right: 0;
   }
@@ -104,9 +120,10 @@
   margin: 0;
   position: absolute;
   top: -23px;
-  left: 14px;
-}
+  left: 19px;
 
-.contacts__field__container {
-  position: relative;
+  @media (min-width: $tablet-width) {
+    left: 16px;
+    top: -20px;
+  }
 }

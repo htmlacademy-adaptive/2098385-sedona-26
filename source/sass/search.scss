@@ -10,11 +10,17 @@
   line-height: 26px;
   text-align: center;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
   }
 }
 
@@ -26,12 +32,26 @@
   margin-bottom: 32px;
   text-align: center;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 435px;
     margin: auto;
+    margin-left: 12px;
     margin-bottom: 45px;
     font-size: 14px;
     line-height: 21px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    margin-bottom: 47px;
   }
 }
 
@@ -52,6 +72,8 @@
   @media (min-width: $tablet-width) {
     min-width: 458px;
     margin: auto;
+    padding-left: 18px;
+    padding-right: 19px;
   }
 
   &:hover {
@@ -69,12 +91,16 @@
 }
 
 .search__wrapper {
-  padding-top: 36px;
-  padding-bottom: 53px;
+  padding-top: 39px;
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-top: 61px;
-    padding-left: 165px;
+    padding-left: 155px;
     padding-right: 165px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
   }
 }

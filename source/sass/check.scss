@@ -6,15 +6,17 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-left: 82px;
+  margin-left: 49px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 240px 240px;
+    grid-template-columns: 259px 232px;
+    margin-left: 140px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 236px 236px 236px 236px;
+    grid-template-columns: 236px 236px 220px 236px;
+    margin-left: 116px;
   }
 }
 
@@ -23,7 +25,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  padding-top: 24px;
+  padding-top: 22px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -32,6 +34,7 @@
 @media (min-width: $tablet-width) {
   .check__title {
     position: relative;
+    font-size: 21px;
     margin-bottom: 38px;
     margin-right: 263px;
   }
@@ -42,8 +45,8 @@
     width: 123px;
     height: 1px;
     background-color: #dbdbdb;
-    left: -200px;
-    top: 35px;
+    left: -185px;
+    top: 48px;
   }
 
   .check__title::after {
@@ -52,16 +55,18 @@
     width: 123px;
     height: 1px;
     background-color: #dbdbdb;
-    left: 320px;
-    top: 35px;
+    left: 335px;
+    top: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .check__title {
     position: relative;
-    margin-bottom: 55px;
+    margin-left: -42px;
+    margin-bottom: 69px;
     margin-right: 447px;
+    padding-top: 45px;
   }
 
   .check__title::before {
@@ -70,8 +75,8 @@
     width: 280px;
     height: 1px;
     background-color: #dbdbdb;
-    left: -390px;
-    top: 35px;
+    left: -330px;
+    top: 70px;
   }
 
   .check__title::after {
@@ -80,8 +85,8 @@
     width: 280px;
     height: 1px;
     background-color: #dbdbdb;
-    left: 290px;
-    top: 35px;
+    left: 340px;
+    top: 70px;
   }
 }
 
@@ -90,6 +95,10 @@
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .check__label {
@@ -98,6 +107,14 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -8px;
+  }
 }
 
 .check__mark {
