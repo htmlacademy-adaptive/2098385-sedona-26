@@ -1,6 +1,6 @@
 .review {
   margin: 0;
-  padding-top: 24px;
+  padding-top: 16px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 24px;
@@ -14,7 +14,7 @@
     padding-left: 60px;
     padding-right: 60px;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +29,7 @@
   background: #81b3d2;
   color: #ffffff;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   border: 0;
@@ -51,6 +51,10 @@
 
   &:disabled {
     background-color: #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {

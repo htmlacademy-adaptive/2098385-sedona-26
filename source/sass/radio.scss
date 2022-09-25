@@ -6,11 +6,12 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-left: 82px;
+  margin-left: 53px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 280px 280px;
+    grid-template-columns: 300px 280px;
+    margin-left: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +23,12 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
+  margin-right: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .radio__title {
@@ -31,14 +37,16 @@
   font-weight: 700;
   line-height: 26px;
   padding-top: 24px;
+  padding-left: 12px;
   margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .radio__title {
     position: relative;
+    font-size: 21px;
     margin-bottom: 38px;
-    margin-left: 183px;
+    margin-left: 178px;
   }
 
   .radio__title::before {

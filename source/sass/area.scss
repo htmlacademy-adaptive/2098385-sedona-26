@@ -7,7 +7,8 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  padding-top: 24px;
+  padding-top: 25px;
+  padding-left: 6px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -16,6 +17,9 @@
   .area__title {
     position: relative;
     margin-bottom: 28px;
+    font-size: 21px;
+    padding-left: 0;
+    padding-top: 20px;
   }
 
   .area__title::before {
@@ -24,8 +28,8 @@
     width: 123px;
     height: 1px;
     background-color: #dbdbdb;
-    left: -210px;
-    top: 35px;
+    left: -200px;
+    top: 30px;
   }
 
   .area__title::after {
@@ -34,8 +38,8 @@
     width: 123px;
     height: 1px;
     background-color: #dbdbdb;
-    left: 312px;
-    top: 35px;
+    left: 317px;
+    top: 30px;
   }
 }
 
@@ -67,12 +71,14 @@
 
 .area__comment {
   color: rgba(0, 0, 0, 0.3);
-  padding: 16px;
   box-sizing: border-box;
+  padding: 12px;
+  padding-top: 16px;
+  padding-left: 17px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 56px;
+  margin-bottom: 51px;
   min-width: 279px;
   height: 150px;
   background-color: #f2f2f2;
@@ -94,6 +100,9 @@
   @media (min-width: $tablet-width) {
     width: 648px;
     min-height: 160px;
+    font-size: 16px;
+    margin-bottom: 42px;
+    padding-left: 15px;
   }
 
   @media (min-width: $desktop-width) {
