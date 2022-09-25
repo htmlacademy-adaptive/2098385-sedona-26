@@ -75,6 +75,26 @@
   @media (min-width: $desktop-width) {
     margin-left: 117px;
     margin-right: 120px;
+    margin-top: 38px;
+  }
+}
+
+.page-footer__list-wrapper--form {
+  @media (min-width: $desktop-width) {
+    margin-top: 95px;
+  }
+}
+
+.page-footer__list-wrapper--catalog {
+  @media (min-width: $desktop-width) {
     margin-top: 120px;
+  }
+}
+
+.page-footer__list-wrapper--index {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
   }
 }

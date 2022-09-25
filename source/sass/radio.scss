@@ -15,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 280px 280px 280px;
+    grid-template-columns: 312px 308px 280px;
+    margin-left: 122px;
   }
 }
 
@@ -75,6 +76,7 @@
     position: relative;
     margin-bottom: 55px;
     margin-left: 330px;
+    padding-top: 35px;
   }
 
   .radio__title::before {
@@ -83,8 +85,8 @@
     width: 280px;
     height: 1px;
     background-color: #dbdbdb;
-    left: -350px;
-    top: 35px;
+    left: -340px;
+    top: 45px;
   }
 
   .radio__title::after {
@@ -93,8 +95,8 @@
     width: 270px;
     height: 1px;
     background-color: #dbdbdb;
-    left: 340px;
-    top: 35px;
+    left: 342px;
+    top: 45px;
   }
 }
 
@@ -129,4 +131,10 @@
   background-repeat: no-repeat;
   top: 15px;
   left: 15px;
+}
+
+.radio__control {
+  @media (min-width: $desktop-width) {
+    margin-left: -10px;
+  }
 }

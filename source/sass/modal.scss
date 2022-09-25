@@ -7,34 +7,37 @@
 }
 
 .modal--one {
-  bottom: 677px;
+  top: 1%;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 400px;
-    left: 30%;
-  }
+    left: 40%;
+    top: 1%;
 
-  @media (min-width: $desktop-width) {
-    left: 35%;
+    br {
+      display: block;
+    }
   }
 }
 
 .modal--two {
-  bottom: 348px;
+  top: 50%;
 
   @media (min-width: $tablet-width) {
+    margin: auto;
     max-width: 640px;
-    left: 20%;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 25%;
+    left: 35%;
+    top: 50%;
   }
 }
 
 .modal__title {
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   margin: 0;
@@ -46,15 +49,21 @@
   }
 }
 
+.modal__title--two {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
 .modal__descript {
   text-transform: uppercase;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   margin: 0;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
+    font-size: 14px;
   }
 }
 
@@ -63,14 +72,15 @@
 
   @media (min-width: $tablet-width) {
     min-width: 307px;
+    margin-bottom: 40px;
   }
 }
 
 .modal__descript--two {
-  min-width: 244px;
+  margin-bottom: 80px;
 
   @media (min-width: $tablet-width) {
-    min-width: 444px;
+    margin-bottom: 99px;
   }
 }
 
@@ -107,18 +117,18 @@
 }
 
 .modal__close--one {
-  padding-left: 63px;
-  padding-right: 63px;
+  padding-left: 70px;
+  padding-right: 80px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 107px;
-    padding-right: 107px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
 .modal__close--two {
-  padding-left: 61px;
-  padding-right: 61px;
+  padding-left: 65px;
+  padding-right: 65px;
 
   @media (min-width: $tablet-width) {
     padding-left: 140px;
@@ -131,14 +141,27 @@
 }
 
 .modal__wrapper--one {
+  background-color: #ffffff;
   padding-top: 45px;
   padding-left: 41px;
   padding-right: 41px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
 }
 
 .modal__wrapper--two {
-  padding: 39px;
+  padding-top: 39px;
+  padding-bottom: 35px;
+  padding-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 39px;
+    padding-left: 80px;
+    padding-right: 89px;
+  }
 }
 
 .modal--close {

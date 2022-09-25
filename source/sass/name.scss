@@ -26,6 +26,10 @@
     padding-left: 37px;
     font-size: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
+  }
 }
 
 .name__write {
@@ -49,6 +53,10 @@
     color: #000000;
     background: none;
     border: solid 4px #e5e5e5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 

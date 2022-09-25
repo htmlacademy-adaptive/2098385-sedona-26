@@ -71,6 +71,8 @@
 }
 
 .benefits__title--bridge {
+  margin-bottom: 10px;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 12px;
   }
@@ -261,6 +263,7 @@
   @media (min-width: $desktop-width) {
     max-width: 400px;
     margin: 0;
+    padding-bottom: 57px;
   }
 }
 
@@ -270,6 +273,7 @@
   padding: 25px;
   padding-left: 35px;
   padding-right: 35px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     max-width: 256px;
@@ -334,10 +338,10 @@
   max-width: 320px;
   margin: 0 auto;
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 38px;
   padding-left: 15px;
   padding-right: 16px;
-  margin-top: 52px;
+  margin-top: 49px;
   order: 1;
 
   @media (min-width: $tablet-width) {

@@ -46,6 +46,12 @@
   }
 }
 
+.lead__title--catalog {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
 .lead__description {
   display: block;
   margin: 0;
@@ -70,5 +76,30 @@
   @media (min-width: $desktop-width) {
     margin-left: 380px;
     margin-bottom: 90px;
+  }
+}
+
+.lead__description--catalog {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+
+.lead--form {
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
+  }
+}
+
+.lead__title--form {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.lead__description--form {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
   }
 }
