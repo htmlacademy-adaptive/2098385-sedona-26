@@ -25,16 +25,19 @@
 
 .catalog__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 0;
   padding-top: 15px;
   padding-right: 27px;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #f2f2f2;
     padding-top: 22px;
     padding-left: 20px;
     padding-bottom: 15px;
+    padding-right: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +81,11 @@
 .catalog__likes {
   font-weight: 700;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 .catalog__button {
@@ -85,6 +93,15 @@
   border: 0;
   display: inline-block;
   background: none;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-right: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
+    padding-right: 0;
+    padding-top: 8px;
+  }
 }
 
 .catalog__item {
@@ -92,7 +109,7 @@
   padding-top: 24px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

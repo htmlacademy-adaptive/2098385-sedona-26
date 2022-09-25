@@ -6,6 +6,7 @@
   position: relative;
   background-color: #81b3d3;
   background-image: url("../img/backmob2.jpg");
+  background-position-y: 97%;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -20,6 +21,14 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backdesktop2@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/backdesktop3.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backdesktop3@2x.jpg");
     }
   }
 

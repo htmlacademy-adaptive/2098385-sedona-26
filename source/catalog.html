@@ -169,8 +169,12 @@
         </ul>
         <div class="catalog__video video">
           <h2 class="video__title">Всё ещё сомневаетесь?</h2>
-          <p class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
-          <img class="video__img" src="img/video.jpg" width="280" height="177" srcset="img/city1@2x.jpg 2x" alt="Видео.">
+          <p class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/videodesktop.jpg 1x, img/videodesktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/videotablet.jpg 1x, img/videotablet@2x.jpg 2x">
+        <img class="video__img" src="img/video.jpg" width="280" height="177" srcset="img/video@2x.jpg 2x" alt="Видео.">
+          </picture>
           <a class="video__link" href=" ">
             <svg class="video__play" width="48" height="55" role="img" aria-label="Запустить видео.">
               <use xlink:href="img/sprite.svg#polygon"></use>
