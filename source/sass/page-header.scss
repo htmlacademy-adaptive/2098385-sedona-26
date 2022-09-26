@@ -30,3 +30,21 @@
     margin-bottom: 0;
   }
 }
+
+.page-header__logo {
+  width: 185px;
+  height: 96px;
+  z-index: 10;
+
+  &:hover {
+    border: solid 4px #e5e5e5;
+  }
+
+  &:focus {
+    border: solid 4px #e5e5e5;
+  }
+
+  &:active {
+    border: solid 4px #e5e5e5;
+  }
+}
